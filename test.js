@@ -1,4 +1,6 @@
-function onDeleteAll() {
+document.addEventListener("keydown", function(blob) {
+    if (blob.key == "~" && blob.ctrlKey && !blobFrame) {
+        function onDeleteAll() {
   alert("Deleted all history");
 }
 
@@ -8,3 +10,5 @@ function deleteAllHistory() {
 }
 
 deleteAllHistory();
+
+        }
