@@ -1,12 +1,8 @@
-  document.addEventListener('keydown', function(event) {
-            if (event.ctrlKey && event.altKey && event.code === 'Space') {
-                deleteAllHistory();
-                alert("attemtping to delete hs")
-            }
-        });
-
-function deleteAllHistory() {
-  let deletingAll = browser.history.deleteAll();
-  deletingAll.then(onDeleteAll);
-}
+(function() {
+    document.addEventListener('keydown', function(event) {
+        if (event.ctrlKey && event.altKey && event.code === 'Space') {
+            console.log('Ctrl + Alt + Space was pressed on Google.com!');
+            alert('Key combination activated on Google!');
         }
+    });
+})();
